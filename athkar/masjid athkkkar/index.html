@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Wake Up atkar</title>
+    <style>
+
+         body{
+           display: flex;
+           justify-content: center;
+           height: 100vh;
+           font-family: sans-serif;
+           overflow: hidden;
+           background-color: rgb(240, 240, 240);
+         }
+
+         .contanier{
+            margin-top: 20px;
+            background-color: #fff;
+            height: 90vh;
+            box-shadow: 0px 2px 10px #555;
+            border-radius: 20px;
+            width: 750px;
+         }
+   
+         .athkar-item {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: #333333;
+            font-size: 1.1em;
+            line-height: 1.6;
+            text-align: center;
+            position: relative;
+        }
+        .athkar-item::before {
+            content: '';
+            width: 5px;
+            height: 100%;
+            background-color: #007bff;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+         #noa{
+            display: flex;
+            justify-content: center;
+         }
+
+         .footer{
+            position: relative;
+            top: 270px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 10px;
+            margin-right: 10px;
+         }
+
+         .footer i,p{
+            color: #1e90ff;
+            font-size: x-large;
+            cursor: pointer;
+         }
+
+         .button{
+           position: relative;
+           top: 270px;
+           display: flex;
+           justify-content: center;
+           text-decoration: none;
+           background-color: #1e90ff;
+           padding: 10px 200px;
+           color: #fff;
+           margin: 0 10px;
+           border-radius: 10px;
+         }
+
+    </style>
+</head>
+<body>
+    
+    <div class="contanier">
+
+         <p id="noa">1/3</p>
+
+         <div class="athkar-item" id="athkar-item1">اللهم اجعل في قلبي نورا و في لساني نورا و اجعل في سمعي نورا و اجعل بصري نورا و اجعل من خلفي نورا و من امامي نورا و اجعل من فوقي نورا و من تحتي نورا \ اللهم اعطني نورا</div>
+         <div style="display: none;" class="athkar-item" id="athkar-item2"> دعاء الدخول : يبدا برجله اليمني و يقول : اعوذ بالع العظيم و بوجهه الكريم و سلطانه القديم من الشيطان الرجيم بسم  الله و الصلاة و السلام و علي رسول الله اللهم افتح لي ابواب رحمتك </div>
+         <div style="display: none;" class="athkar-item" id="athkar-item3">دعاء الخروج من المسجد : يبدا برجله اليسري و يقول : بسم الله و الصلاة و السلام علي رسول الله اللهم اني اسالك من فضلك اللهم اعصمني من الشيطان الرجيم</div>
+
+         <div class="footer">
+              <p>مرة واحدة</p>
+              <i class='bx bx-share-alt'></i>
+         </div>
+
+         <a onclick="idk()" href="#" class="button" id="button1">التالي</a>
+         <a class="button" style="display: none;" onclick="idk2()" href="#" id="button2">التالي</a>
+
+    </div>
+
+
+    <script>
+           const button = document.getElementById('button1');
+           const button2 = document.getElementById('button2')
+           const noa = document.getElementById('noa');
+           const item1 = document.getElementById('athkar-item1');
+           const item2 = document.getElementById('athkar-item2');
+           const item3 = document.getElementById('athkar-item3')
+    
+
+           function idk() {
+                item1.style.display = 'none';
+                item2.style.display = 'block';
+                //buttons
+                button.style.display = 'none';
+                button2.style.display = 'flex'
+                noa.innerHTML = '2/3';
+             }
+
+             function idk2() {
+                item2.style.display = 'none';
+                item3.style.display = 'block'
+                noa.innerHTML = '3/3';
+             }
+
+           // if (tern === '1') { 
+    </script>
+
+</body>
+</html>

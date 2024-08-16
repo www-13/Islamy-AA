@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>ISLAMY 2</title>
+</head> 
+<body>  
+
+    <div class="mobile-nav">
+        <ul>
+            <br>
+            <li><a href="#">(الفرق) الريئيسة</a></li>
+            <br>
+            <li><a href="rights/index.html">القوانين</a></li>
+            <br>
+            <li><a href="the table/index.html">جدول المبارايات</a></li>
+            <br>
+            <li><a href="the ana/index.html">الاحصائيات</a></li>
+        </ul>
+    </div>
+       
+      <nav>
+        <h1 id="h1">Islamy<span>AA</span></h1> 
+             <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="qraan pdf.pdf">Read</a></li>
+                 <li><a href="listen/index.html">Listen</a></li>
+                 <li><a href="athkar/index.html">Athkar</a></li>
+                 <li><a href="https://www-13.github.io/Adam/">About Me</a></li>
+                 <li><a href="pt/index.html">Prayer times</a></li>
+             </ul>
+
+             <a onclick="toggleMobileNav()" id="menu-icon" href="#"><i class='bx bx-menu'></i></a>
+        </nav>
+
+        <div class="word11">
+             صلي علي الننبي
+        </div>
+
+        <script>
+
+            function toggleMobileNav() {
+                const mobileNav = document.querySelector('.mobile-nav');
+    
+                if (mobileNav.style.display === "none" || mobileNav.style.display === "") {
+                    mobileNav.style.display = "flex";
+                } else {
+                    mobileNav.style.display = "none";
+                }
+            }
+    
+            window.toggleMobileNav = toggleMobileNav; 
+    
+        </script> 
+    
+</body>
+</html>      
